@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity2</title>
+</head>
+<body>
+    <p>Multiply function</p>
+    <p id="Product_value"></p>
+
+    <script>
+
+        var numbers = [0,84,36,86,84,36,8];
+
+        function myfunc(num) {
+            return num*10;
+        }
+
+        var newarray = numbers.map(myfunc);
+        document.getElementById("Product_value").innerHTML = newarray;
+    </script>
+</body>
+</html>

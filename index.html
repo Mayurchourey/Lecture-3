@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in javascript</title>
+</head>
+<body>
+    <p>click obn these button to sort accending & decending order</p>
+    <button onclick="accentding()">accending</button>
+    <button onclick="decending()">decending</button>
+
+    <p id="result"></p>
+    <script>
+        var points = [45,96,23,9,32,15,0];
+        document.getElementById("result").innerHTML = points;
+
+        function accentding() {
+            points.sort(function(a, b){return a - b});
+            document.getElementById("result").innerHTML = points;
+        }
+
+        function decending() {
+            points.sort(function(a, b){return b - a});
+            document.getElementById("result").innerHTML = points;
+        }
+    </script>
+</body>
+</html>
